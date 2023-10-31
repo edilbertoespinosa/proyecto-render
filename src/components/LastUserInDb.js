@@ -19,18 +19,18 @@ function LastUserInDb() {
       <div className="card shadow mb-4">
         <div className="card-header py-3">
           <h5 className="m-0 font-weight-bold text-gray-800">
-            Last user in Data Base
+            Último usuario grabado
           </h5>
         </div>
         <div className="card-body">
           <div className="text-center card bg-dark text-white shadow">
-            <p>id : {user.id}</p>
+            <p>Id : {user.id}</p>
           </div>
           <div className="text-center card bg-dark text-white shadow">
-            <p>name : {user.name}</p>
+            <p>Nombre : {user.name}</p>
           </div>
           <div className="text-center card bg-dark text-white shadow">
-            <p>mail : {user.mail}</p>
+            <p>Correo Electrónico : {user.mail}</p>
           </div>
         </div>
       </div>
