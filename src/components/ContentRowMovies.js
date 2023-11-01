@@ -49,7 +49,6 @@ function ContentRowMovies() {
       .then((data) => {
         movies = data.movies;
         moviesInDB.cuantity = movies.length;
-        console.log("movies.length : ", movies.length);
         moviesInDB.cuantity = movies.length;
 
         fetch("http://localhost:3000/api/genres")
@@ -57,14 +56,11 @@ function ContentRowMovies() {
           .then((data) => {
             genres = data.genero;
             totalAwards.cuantity = genres.length;
-            console.log("genres.length : ", genres.length);
 
             fetch("http://localhost:3000/api/users")
               .then((response) => response.json())
               .then((data) => {
                 users = data.users;
-                console.log("users : ", users);
-                console.log("users.length : ", users.length);
                 actorsQuantity.cuantity = users.length;
                 setCartProps([moviesInDB, totalAwards, actorsQuantity]);
               })
