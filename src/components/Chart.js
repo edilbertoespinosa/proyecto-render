@@ -2,23 +2,6 @@ import React from "react";
 import ChartRow from "./ChartRow";
 import { useState, useEffect } from "react";
 
-let tableRowsData = [
-  {
-    id: 1,
-    name: "Billy Elliot ",
-    description: "Billy Elliot ",
-    genres: { description: "genero1" },
-    classifications: { description: "clasificacion1" },
-  },
-  {
-    id: 1,
-    name: "Alicia en el país de las maravillas",
-    description: "Alicia en el país de las maravillas",
-    genres: { description: "genero2" },
-    classifications: { description: "clasificacion2" },
-  },
-];
-
 function Chart() {
   let [movies, setMovies] = useState([]);
 
