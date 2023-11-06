@@ -10,12 +10,12 @@ function GenresInDb() {
     let generos = [];
     let peliculas = [];
     let peliculasGenero = [];
-    fetch("http://localhost:3000/api/genres")
+    fetch("http://localhost:3001/api/genres")
       .then((response) => response.json())
       .then((data) => {
         generos = data.genero;
 
-        fetch("http://localhost:3000/api/products")
+        fetch("http://localhost:3001/api/products")
           .then((response) => response.json())
           .then((data) => {
             peliculas = data.movies;

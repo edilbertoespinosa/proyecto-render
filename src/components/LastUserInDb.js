@@ -5,7 +5,7 @@ function LastUserInDb() {
   let [user, setUser] = useState({});
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/users")
+    fetch("http://localhost:3001/api/users")
       .then((response) => response.json())
       .then((data) => {
         const users = data.users;

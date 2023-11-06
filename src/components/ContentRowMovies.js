@@ -51,13 +51,13 @@ function ContentRowMovies() {
         moviesInDB.cuantity = movies.length;
         moviesInDB.cuantity = movies.length;
 
-        fetch("http://localhost:3000/api/genres")
+        fetch("http://localhost:3001/api/genres")
           .then((response) => response.json())
           .then((data) => {
             genres = data.genero;
             totalAwards.cuantity = genres.length;
 
-            fetch("http://localhost:3000/api/users")
+            fetch("http://localhost:3001/api/users")
               .then((response) => response.json())
               .then((data) => {
                 users = data.users;
