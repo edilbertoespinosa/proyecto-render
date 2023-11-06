@@ -6,14 +6,14 @@ import LastUserInDb from "./LastUserInDb";
 function ContentRowCenter() {
   return (
     <div className="row">
-      <table>
+      <table width="100%">
         <tbody>
           <tr>
-            <td>
+            <td width="50%">
               {/*<!-- Last Movie in DB -->*/}
               <LastMovieInDb />
             </td>
-            <td rowSpan={2} align="top">
+            <td rowSpan={2} align="top" width="50%">
               {/*<!-- Genres in DB -->*/}
               <GenresInDb />
             </td>
